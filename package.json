@@ -1,0 +1,8 @@
+{
+  "name": "React-Insta-Clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jtkoch/React-Insta-Clone.git",
+  "author": "Jensen Koch <jtkoch12@gmail.com>",
+  "license": "MIT"
+}
