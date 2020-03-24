@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 import './App.scss';
-import PostContainer from './components/PostContainer/PostContainer';
-import SearchBar from './components/SearchBar/SearchBar';
-import dummyData from './dummy-data';
+import PostsPage from './components/PostContainer/PostsPage';
+import Authenticate from './components/Authentication/Authenticate';
 
-function App() {
-  const [posts, setPosts] = useState(dummyData);
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
 
-  return (
-    <div className="App">
-      <SearchBar />
-      <PostContainer posts={posts} />
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <PostsPage />
+      </div>
+    );
+  }
 }
 
-export default App;
+export default Authenticate(App);
